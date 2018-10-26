@@ -1,0 +1,30 @@
+<div>
+  <table>
+    <thead>
+      <th>Nome</th>
+      <th>CPF</th>
+      <th>E-mail</th>
+      <th>CEP</th>
+      <th>Logradouro</th>
+      <th>Número</th>
+      <th>Complemento</th>
+      <th>Bairro</th>
+      <th>Cidade</th>
+      <th>UF</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of pessoas">
+        <td>{{p.nome}}</td>
+        <td>{{p.cpf}}</td>
+        <td>{{p.email}}</td>
+        <td>{{p.endereco.cep}}</td>
+        <td>{{p.endereco.logradouro}}</td>
+        <td>{{p.endereco.numero}}</td>
+        <td>{{p.endereco.complemento}}</td>
+        <td>{{p.endereco.bairro}}</td>
+        <td>{{p.endereco.cidade}}</td>
+        <td>{{p.endereco.uf}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,59 @@
+<div>
+  <fieldset>
+    <legend> Pessoa:</legend>
+
+    <table>
+
+      <tr>
+        <td><label>Nome:</label></td>
+        <td><input type="text"  [(ngModel)]="pessoa.nome"></td>
+      </tr>
+      <tr>
+        <td><label>CPF:</label></td>
+        <td><input type="text"  [(ngModel)]="pessoa.cpf"></td>
+      </tr>
+      <tr>
+        <td><label>E-mail:</label></td>
+        <td><input type="text" [(ngModel)]="pessoa.email"></td>
+      </tr>
+
+    </table>
+  </fieldset>
+
+  <fieldset>
+  <legend>Endereço</legend>
+
+  <table>
+
+    <tr>
+      <td><label >CEP:</label></td> 
+      <td><input type="text"  [(ngModel)]="endereco.cep"></td> 
+    </tr>
+    <tr>
+      <td><label>Logradouro:</label></td> 
+      <td><input type="text" [(ngModel)]="endereco.logradouro"></td> 
+    </tr>
+    <tr>
+      <td><label>Numero:</label></td> 
+      <td><input type="text" [(ngModel)]="endereco.numero"></td> 
+    </tr>
+    <tr>
+      <td><label>Complemento:</label></td> 
+      <td><input type="text" [(ngModel)]="endereco.complemento"></td> 
+    </tr>
+    <tr>
+      <td><label>Bairro:</label></td> 
+      <td><input type="text" [(ngModel)]="endereco.bairro"></td> 
+    </tr>
+    <tr>
+      <td><label>Cidade:</label></td> 
+      <td><input type="text" [(ngModel)]="endereco.cidade"></td> 
+    </tr>
+    <tr>
+      <td><label>UF:</label></td> 
+      <td><input type="text" [(ngModel)]="endereco.uf"></td> 
+    </tr>
+  </table>
+</fieldset>
+  <button (click)="inserir()">SALVAR</button>
+</div>
